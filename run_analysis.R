@@ -71,7 +71,7 @@ mergedDataMeanStd_melt <- melt(mergedData_MeanStd,
                                id=c("activitylabel","subject","type"),
                                measure.vars=names(mergedData_MeanStd[,5:90]) # only data variables
                                )
+write.table(mergedDataMeanStd_melt, file="tidy_data_set.csv", quote=TRUE, sep=";")
 # head(mergedDataMeanStd_melt)
 meanData <- acast(mergedDataMeanStd_melt, variable ~ activitylabel ~ subject, mean)
 meanData
-write.table(meanData, file="tidy_data_set.csv", quote=TRUE, sep=";")

@@ -1,17 +1,19 @@
-Code Book
-========================================================
+Data Dictionary for tidy_data_set.csv
+=====================================
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring web pages (click the **Help** toolbar button for more details on using R Markdown).
+Columns
+=======
 
-When you click the **Knit HTML** button a web page will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+* __activitylabel__: describe each type of label activity ("LAYING", "SITTING", "STANDING", "WALKING", "WALKING_DOWNSTAIRS", "WALKING_UPSTAIRS").
+* __subject__: id of each evaluated subject.
+* __type__: each training and the test sets ("test" or "train").
+* __variable__: each name of the features from original dataset (please refer to features_info.txt and features.txt from original dataset for additional information).
+* __value__: average of each variable.
 
-```{r}
-summary(cars)
-```
+References
+==========
 
-You can also embed plots, for example:
-
-```{r fig.width=7, fig.height=6}
-plot(cars)
-```
-
+Codebook example extrated from quizz1:  
+https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2FPUMSDataDict06.pdf  
+as described in ticket:   
+https://class.coursera.org/getdata-004/forum/thread?thread_id=106  
