@@ -4,9 +4,7 @@ Data Dictionary for tidy_data_set.csv
 Columns
 =======
 
-* __activitylabel__: describe each type of label activity ("LAYING", "SITTING", "STANDING", "WALKING", "WALKING_DOWNSTAIRS", "WALKING_UPSTAIRS").
-* __subject__: id of each evaluated subject.
-* __type__: each training and the test sets ("test" or "train").
+* __<activitylabel>.<subject>__: describe each type of label activity ("LAYING", "SITTING", "STANDING", "WALKING", "WALKING_DOWNSTAIRS", "WALKING_UPSTAIRS") by id of each evaluated subject.
 * __variable__: each name of the features from original dataset (please refer to features_info.txt and features.txt from original dataset for additional information).
 * __value__: average of each variable.
 
